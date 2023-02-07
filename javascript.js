@@ -82,7 +82,7 @@ operators.forEach((operator)=>{
     operator.addEventListener('click',()=>{
         firstOperand=Number(getDisplayText());
         operatorSign=operator.textContent;
-        editDisplayText(operatorSign);
+        deleteDisplayText(operatorSign);
         dotUsed=false;
     });
 });
@@ -127,7 +127,11 @@ const deleteButtton=document.querySelector(".delete");
 deleteButtton.addEventListener("click",()=>{
     let text=getDisplayText();
     if(text!="0"){
+        if(text[text.length-1]==".") 
+            dotUsed=false;
         text=text.slice(0,-1);
     }
+    text=text||"0";
     editDisplayText(text);
+
 });
