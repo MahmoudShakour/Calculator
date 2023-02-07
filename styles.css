@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.container{
+    width: 400px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator{
+    width: 300px;
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    gap: 18px;
+    border-radius: 20px;
+    background-color: darkgray;
+}
+
+
+.display-container{
+    border: 1px solid black;
+    padding: 50px 30px 20px 240px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: whitesmoke;
+}
+
+.display{
+    padding-right: 20px;
+    font-size: 40px;
+    float: left;
+}
+
+button{
+    font-size: 20px;
+    padding: 20px; 
+    border-radius: 5px;
+}
+
+.clear-delete-buttons button{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.clear-delete-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.row
+{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    align-self: stretch;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
